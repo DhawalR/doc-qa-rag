@@ -1,0 +1,21 @@
+#virtual environment
+venv/
+
+#secret keys - never commit
+.env
+
+#chromaDb local data
+chroma_db/
+
+#python cache
+__pychace__/
+*.pyc
+*.pyo
+
+#macOS
+.DS_Store
+
+ #ide
+ .vscode/
+ .idea/
+ 
