@@ -16,6 +16,11 @@ Augmented Prompt → GPT-4o-mini → Answer
 Faithfulness + Relevance Evaluation
 
 ---
+## 📸 Demo
+
+![Dashboard Screenshot](assets/dashboard.png)
+
+---
 
 ## ✨ Features
 
