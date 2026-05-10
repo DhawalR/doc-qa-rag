@@ -6,23 +6,25 @@ Built as a learning project to deeply understand RAG architecture, embeddings, v
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
+```
 PDF → Text Extraction → Chunking → Embeddings → ChromaDB
-↓
+                                                     ↓
 User Query → Embed Query → Cosine Similarity Search → Top 5 Chunks
-↓
-Augmented Prompt → GPT-4o-mini → Answer
-↓
-Faithfulness + Relevance Evaluation
+                                                        ↓
+                                 Augmented Prompt → GPT-4o-mini → Answer
+                                                                    ↓
+                                                   Faithfulness + Relevance Evaluation
+   ```
 
 ---
-## 📸 Demo
+##  Demo
 
 ![Dashboard Screenshot](assets/dashboard.png)
 
 ---
 
-## ✨ Features
+##  Features
 
 - **PDF Ingestion** : Extracts text from any text-based PDF using LangChain
 - **Intelligent Chunking** : Splits text with overlap to preserve context boundaries
@@ -35,7 +37,7 @@ Faithfulness + Relevance Evaluation
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Tool | Purpose |
 |------|---------|
@@ -48,6 +50,8 @@ Faithfulness + Relevance Evaluation
 ---
 
 ## 📁 Project Structure
+
+```
 doc-qa-rag/
 ├── data/                  # Input PDF files
 ├── src/
@@ -64,10 +68,11 @@ doc-qa-rag/
 ├── main.py                # CLI pipeline entry point
 ├── requirements.txt
 └── .env.example
+```
 
 ---
 
-## 🚀 Setup
+##  Setup
 
 1. **Clone the repository**
 ```bash
@@ -105,7 +110,7 @@ doc-qa-rag/
 
 ---
 
-## 💡 How It Works
+##  How It Works
 
 ### Indexing Phase (done once per document)
 1. PDF text is extracted page by page
@@ -122,7 +127,7 @@ doc-qa-rag/
 
 ---
 
-## ⚠️ Known Limitations
+##  Known Limitations
 
 - Mathematical formulas in PDFs may not extract correctly due to limitations of text-based PDF parsing. Tools like Nougat or MathPix handle this better for academic papers.
 - Scanned PDFs (image-based) are not supported - text-based PDFs only.
@@ -142,7 +147,7 @@ Scoring uses LLM-as-a-judge on a 1-5 scale with full reasoning.
 
 ---
 
-## 🎯 Resume Bullet Points
+##  Bullet Points
 
 - Built end-to-end RAG pipeline using LangChain, ChromaDB, and OpenAI with semantic chunking, cosine similarity retrieval, and automated hallucination evaluation
 - Implemented document fingerprinting to prevent duplicate embedding API calls across sessions
@@ -150,4 +155,4 @@ Scoring uses LLM-as-a-judge on a 1-5 scale with full reasoning.
 
 ---
 
-*Built by Dhawal - NITK*
+Built by Dhawal - NITK
