@@ -2,6 +2,8 @@ from src.ingestion import load_pdf
 from src.chunking import chunk_documents
 from src.retriever import get_retriever, retrieve_chunks
 from src.generation import run_all_prompting_strategies, inspect_answers
+from src.evaluation import run_full_evaluation
+
 
 # ---- SETTINGS ----
 PDF_PATH = "data/attention_paper.pdf"
@@ -23,3 +25,6 @@ relevant_chunks = retrieve_chunks(retriever, QUESTION)
 print("\n>>> Step 5: Generating answers")
 results = run_all_prompting_strategies(QUESTION, relevant_chunks)
 inspect_answers(results, QUESTION)
+
+print("\n>>> Step 6: Evaluating")
+run_full_evaluation(QUESTION, relevant_chunks, results)
