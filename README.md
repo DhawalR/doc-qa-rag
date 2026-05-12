@@ -1,4 +1,4 @@
-# 📄 Document Q&A RAG Pipeline
+#  Document Q&A RAG Pipeline
 
 A production-style Retrieval-Augmented Generation (RAG) system that answers questions about PDF documents with full retrieval transparency and automated evaluation.
 
@@ -8,8 +8,8 @@ Built as a learning project to deeply understand RAG architecture, embeddings, v
 
 ##  Architecture
 ```
-PDF → Text Extraction → Chunking → Embeddings → ChromaDB
-                                                     ↓
+  PDF → Text Extraction → Chunking → Embeddings → ChromaDB
+                                                        ↓
 User Query → Embed Query → Cosine Similarity Search → Top 5 Chunks
                                                         ↓
                                  Augmented Prompt → GPT-4o-mini → Answer
