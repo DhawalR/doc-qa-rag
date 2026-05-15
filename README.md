@@ -154,5 +154,19 @@ Scoring uses LLM-as-a-judge on a 1-5 scale with full reasoning.
 - Compared zero-shot, few-shot, and chain-of-thought prompting strategies with quantitative LLM-as-a-judge evaluation
 
 ---
+---
+
+##  Upcoming: AWS Cloud Deployment
+
+The project is currently running locally, with plans to deploy it to **AWS** in the near future — using only **Always Free** tier services that do not expire and cost nothing within their monthly limits:
+
+- **AWS Lambda** : Run the embedding and retrieval pipeline as serverless functions — free for up to 1 million requests/month, always
+- **Amazon S3** : Store PDF documents in the cloud — free for up to 20,000 GET and 2,000 PUT requests/month, always
+- **Amazon DynamoDB** : Persist document metadata and session state — free for up to 25 GB storage and 200 million requests/month, always
+- **Amazon CloudWatch** : Monitor pipeline performance and errors — free for up to 10 custom metrics and 10 alarms, always
+<!-->  All services listed above fall under AWS's **Always Free** tier, meaning they remain free indefinitely as long as usage stays within the monthly limits. No credit card charges expected for a project of this scale. -->
+
+
+---
 
 Built by Dhawal - NITK
