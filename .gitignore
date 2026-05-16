@@ -21,3 +21,10 @@ __pychace__/
  
 # PDF files in data folder
 data/*.pdf
+
+# Configuration search cache — local only
+chroma_configs/
+
+# Generated PDF reports — local only
+Interview_Revision_Guidemdoc-qa-rag.pdf
+FULL_doc_qa_rag_report.pdf

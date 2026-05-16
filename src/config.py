@@ -22,5 +22,4 @@ CHUNK_SIZE = 1000
 CHUNK_OVERLAP = 200
 
 #retrieval settings
-TOP_K_RESULTS = 5
-
+TOP_K_RESULTS = 7  # optimised via grid search — see results/
