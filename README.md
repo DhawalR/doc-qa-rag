@@ -206,7 +206,7 @@ Scoring uses LLM-as-a-judge on a 1-5 scale with full reasoning.
 ---
 ---
 
-##  Upcoming: AWS Cloud Deployment
+<!--##  Upcoming: AWS Cloud Deployment
 
 The project is currently running locally, with plans to deploy it to **AWS** in the near future — using only **Always Free** tier services that do not expire and cost nothing within their monthly limits:
 
